@@ -39,7 +39,7 @@ with open("user.yaml","r") as stream:
  ```
  ![image](https://user-images.githubusercontent.com/129259654/233891066-85300204-27bc-45b4-bfd1-c4d0736b2a36.png)
 
- ## 4. Tạo cấu trúc JSON
+ ## 5. Tạo cấu trúc JSON
  Sử dụng option indent để xác định khoảng lùi đầu dòng.
  
  Để sắp xếp các key theo thức tự alpha dùng sort_keys= True (mặc định là False)
@@ -50,7 +50,13 @@ with open("user.yaml","r") as stream:
  ```
  ![image](https://user-images.githubusercontent.com/129259654/233891125-b2338c18-8dbe-4450-8a79-daa9ac75cd1c.png)
 
+ ## 6. Xuất ra file Json
  
+ ```
+ file = open("user.json","w")
+ file.write(user_json)
+ file.close()
+ ```
  
   
 
